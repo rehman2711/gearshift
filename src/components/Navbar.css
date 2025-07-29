@@ -1,0 +1,127 @@
+.nav-a {
+  color: white !important;
+}
+
+/* .nav-style .nav-a:hover{
+  color: black !important;
+} */
+
+.nav-style:hover {
+  color: black !important;
+  background-color: white !important;
+  border-radius: 10px;
+}
+
+/* on button text black */
+.nav-style:hover .nav-a {
+  color: black !important;
+}
+
+
+
+.dropdown-item:hover {
+  border-radius: 5px;
+  color: white !important;
+  font-size: 20px;
+}
+
+.dropdown-menu {
+  padding: 0; /* Remove extra padding inside the menu */
+  margin: 0; /* Remove extra margin around menu */
+  border-radius: 8px; /* Optional: a bit rounded if you like */
+  overflow: hidden; /* Avoid weird gaps after hover */
+}
+
+.dropdown-menu li {
+  margin: 0; /* No margin between list items */
+}
+
+/* for dropdown */
+
+.dropdown-item {
+  font-size: 1rem; /* or 16px */
+  font-weight: 500; /* Medium weight */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Before Hover - background colors */
+.dropdown-menu li:first-child .dropdown-item {
+  background-color: #ffe5e5;
+  color: black !important;
+}
+.dropdown-menu li:nth-child(2) .dropdown-item {
+  background-color: #e5ecff;
+  color: black !important;
+}
+.dropdown-menu li:nth-child(3) .dropdown-item {
+  background-color: #e5fff0;
+  color: black !important;
+}
+
+/* On Hover */
+.dropdown-menu li:first-child .dropdown-item:hover {
+  background-color: yellow;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+.dropdown-menu li:nth-child(2) .dropdown-item:hover {
+  background-color: skyblue;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+.dropdown-menu li:nth-child(3) .dropdown-item:hover {
+  background-color: #00cc66;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+
+/* ******************************************* */
+
+
+
+.navbar {
+  padding: 0; /* Remove any default padding */
+  z-index: 2;
+}
+
+.navbar .container {
+  padding: 0 15px; /* Optional: Controls the space between navbar content and screen edges */
+}
+
+.navbar-nav {
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 20px; /* Adjust if there's too much space between items */
+}
+
+.nav-link {
+  padding: 8px 15px; /* Adjust padding as needed */
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5); /* Toggler icon border color */
+}
+
+.dropdown-menu {
+  background-color: #343a40; /* Dark background for dropdown */
+}
+
+.btn-warning {
+  padding: 7px 15px;
+  border-radius: 10px;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    margin-top: 0px; /* Adjust navbar items margin in small screens */
+  }
+}

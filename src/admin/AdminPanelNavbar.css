@@ -1,0 +1,10 @@
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:focus{
+    color: black !important;
+    background-color: white;
+    border-radius: 10px;
+}
+

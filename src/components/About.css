@@ -1,0 +1,33 @@
+.bgmain{
+    background-image: url('/public/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px ;
+    width: 100%;
+    position: relative;
+    box-shadow: 10px 0px 15px  rgba(0, 0, 0, 0.40);
+}
+
+.bgblur{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+#about{
+    text-align: center;
+    color: aliceblue;
+    padding: 250px 370px;
+}
+
+#Alorem{
+    margin-left: 200px;
+}
+
+.info1{
+    padding: 35px;
+    background-color: azure;
+}
+
+

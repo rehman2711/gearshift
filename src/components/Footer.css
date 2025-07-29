@@ -1,0 +1,46 @@
+.bg-darkkk{
+    background-color: #111;
+    margin: 0px;
+
+}
+
+.footer {
+    margin: 0px;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .text-orange {
+    color: #ff6600;
+  }
+  
+  .social-icons i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    background: #ff6600;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .footer-link {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 8px;
+  }
+  
+  .footer-link:hover {
+    color: #ff6600;
+  }
+  
+  .btn-submit {
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  

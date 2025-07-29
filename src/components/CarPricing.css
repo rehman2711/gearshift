@@ -1,0 +1,33 @@
+/* Top section with padding */
+.container-fluid.bg-dark {
+    padding: 50px 0;
+  }
+
+  .card-element{
+    /* lets take the color in gradiant to make it attractive */
+    border: 2px solid #ccc ;
+    border-radius: 20px;
+  }
+  
+  /* Car Pricing Card */
+  .car-imageHover {
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  
+  .car-imageHover:hover {
+    transform: translateY(52.5px);
+  }
+  
+  .card-img-top {
+    /* ! important because upper corners are not radiusing  */
+    border-radius: 20px !important;
+    height: 200px;
+    width: "100%";
+    object-fit: cover ;
+  }
+  
+
+  
