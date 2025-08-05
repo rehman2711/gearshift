@@ -76,7 +76,7 @@ const FormCar = () => {
         // stoped reloading by default behaviuor of form by prevent handler
         e.preventDefault();
 
-        axios.post("https://gearshift-api-9isy.onrender.com/api/cars" , carInfo )
+        axios.post("${process.env.REACT_APP_PUBLIC_API_URL}/cars" , carInfo )
 
         setCarInfo({
             cId:'',

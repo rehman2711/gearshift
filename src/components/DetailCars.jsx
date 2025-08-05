@@ -40,7 +40,7 @@ const DetailCars = () => {
 
     const fetchURLdata = async()=>{
 
-        const carResult = await axios.get(`https://gearshift-api-9isy.onrender.com/api/cars/${param.idd}`)
+        const carResult = await axios.get(`${process.env.REACT_APP_PUBLIC_API_URL}/cars/${param.idd}`)
 
         console.log(carResult);
 
