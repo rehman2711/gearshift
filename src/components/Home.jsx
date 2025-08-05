@@ -16,7 +16,8 @@ const Home = () => {
     // https://app.beeceptor.com/console/gearshift/ 
 
     // const resultData = await axios.get(`https://gearshift-car-api.onrender.com`)
-    const resultData = await axios.get(`https://gearshift-api-9isy.onrender.com/api/cars`)
+    // console.log('API URL:', process.env.REACT_APP_PUBLIC_API_URL);
+    const resultData = await axios.get(`${process.env.REACT_APP_PUBLIC_API_URL}/cars`)
   
     setCar(resultData.data)
     console.log(resultData.data)

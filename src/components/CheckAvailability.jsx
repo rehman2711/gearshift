@@ -19,7 +19,7 @@ const CheckAvailability = () => {
     // ***************************************************************
 
     const fetchCar = async()=>{
-        const result = await axios.get(`https://gearshift-api-9isy.onrender.com/api/cars/${param.car_id}`)
+        const result = await axios.get(`${process.env.REACT_APP_PUBLIC_API_URL}/cars/${param.car_id}`)
         // console.log(result.data)
         setCarData(result.data);
     }

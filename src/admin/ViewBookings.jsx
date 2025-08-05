@@ -8,7 +8,7 @@ const ViewBookings = () => {
     // ===================================================
 
     const fetchCustomer = async()=>{
-        const result = await axios.get(`https://gearshift-api-9isy.onrender.com/api/bookings`)
+        const result = await axios.get(`${process.env.REACT_APP_PUBLIC_API_URL}/bookings`)
 
         setViewCustomerBookings(result.data)
     }

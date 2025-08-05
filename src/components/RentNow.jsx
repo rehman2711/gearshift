@@ -30,7 +30,7 @@ const RentNow = () => {
     // ************************************************
 
     const fetch = async()=>{
-       const result = await axios.get(`https://gearshift-api-9isy.onrender.com/api/cars`);
+       const result = await axios.get(`${process.env.REACT_APP_PUBLIC_API_URL}/cars`);
 
        setRentNow(result.data)
 
@@ -86,7 +86,7 @@ const RentNow = () => {
     console.log(customer)
 
 
-        axios.post(`https://gearshift-api-9isy.onrender.com/api/bookings`,customer)
+        axios.post(`${process.env.REACT_APP_PUBLIC_API_URL}/bookings`,customer)
 
         setCustomer(
             {

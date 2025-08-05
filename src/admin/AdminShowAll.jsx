@@ -15,7 +15,7 @@ const AdminShowAll = () => {
     // ************************************
 
   const fetchData = async()=>{
-    const resultData = await axios.get(`https://gearshift-api-9isy.onrender.com/api/cars`)
+    const resultData = await axios.get(`${process.env.REACT_APP_PUBLIC_API_URL}/cars`)
   
     setCar(resultData.data)
     console.log(resultData.data)
@@ -40,7 +40,7 @@ const DeleteCar =(click)=>{
 
     setCar(res); 
 
-    axios.delete(`https://gearshift-api-9isy.onrender.com/api/cars/${click}`)
+    axios.delete(`${process.env.REACT_APP_PUBLIC_API_URL}/cars/${click}`)
 }
 
 // ************************************************

@@ -53,7 +53,7 @@ const RentTheCarNow = () => {
 
     const fetch = async()=>{
 
-        const res = await axios.get(`https://gearshift-api-9isy.onrender.com/api/cars/${param.choosen_id}`)
+        const res = await axios.get(`${process.env.REACT_APP_PUBLIC_API_URL}/cars/${param.choosen_id}`)
 
         // console.log(res.data)
 
@@ -69,7 +69,7 @@ const RentTheCarNow = () => {
 
     // =================================2=================================
     const fetchD = async()=>{
-        const result = await axios.get(`https://gearshift-api-9isy.onrender.com/api/cars`);
+        const result = await axios.get(`${process.env.REACT_APP_PUBLIC_API_URL}/cars`);
  
         setRentNow(result.data)
  
@@ -107,7 +107,7 @@ const RentTheCarNow = () => {
     console.log(customer)
 
 
-        axios.post(`https://gearshift-api-9isy.onrender.com/api/bookings`,customer)
+        axios.post(`${process.env.REACT_APP_PUBLIC_API_URL}/bookings`,customer)
 
         // setCustomer(
         //     {

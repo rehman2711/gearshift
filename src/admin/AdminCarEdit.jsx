@@ -41,7 +41,7 @@ const AdminCarEdit = () => {
 
     const fetchData = async()=>{
 
-    const carResult = await axios.get(`https://gearshift-api-9isy.onrender.com/api/cars/${para.carid}`)
+    const carResult = await axios.get(`${process.env.REACT_APP_PUBLIC_API_URL}/cars/${para.carid}`)
 
     setCarInfo({
         cId:carResult.data.cId,
@@ -90,7 +90,7 @@ const AdminCarEdit = () => {
 
         e.preventDefault();
 
-        axios.patch(`https://gearshift-api-9isy.onrender.com/api/cars/${para.carid}`,carInfo)
+        axios.patch(`${process.env.REACT_APP_PUBLIC_API_URL}/cars/${para.carid}`,carInfo)
 
         nav('/admin/managedata')
 
